@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			input,body,p,h1,i {
+				padding: 0;
+				margin: 0;
+			}
+			
+			body {
+				background: #f5f5f5;
+			}
+			
+			div{
+				width: 390px;
+				margin: 0 auto;
+				padding-bottom: 19px;
+			}
+			.con>div>span{
+				display: none;
+			}
+			.con {
+				width: 390px;
+				padding: 0px 200px 20px;
+				margin: 30px auto;
+				background: white;
+			}
+			
+			.con>h1:nth-child(1) {
+				padding-top: 10px;
+				padding-bottom: 25px;
+				margin: 0 auto;
+				width: 156px;
+				height: 55px;
+				background: transparent url(img/nubia-logo.png) no-repeat;
+				background-position: 1px -40px;
+			}
+			
+			.con>p {
+				position: relative;
+				width: 380px;
+				height: 24px;
+				margin-bottom: 15px;
+				text-align: center;
+			}
+			
+			.con>p:after {
+				position: absolute;
+				content: "";
+				display: block;
+				height: 70%;
+				width: 1.4px;
+				top: 4px;
+				margin: auto;
+				background: #999;
+				left: 50%;
+			}
+			
+			.con>p>span{
+				cursor: pointer;
+				font-size: 18px;
+				text-align: center;
+				padding: 0 6px;
+			}
+			
+			.con>div:nth-child(3)>input {
+				height: 48px;
+				width: 370px;
+				text-indent: 10px;
+				outline: none;
+				margin-right: 12px;
+			}
+			
+			.yincang {
+				display: inline-block;
+				width: 1px;
+				white-space: nowrap;
+				font-size: 12px;
+				color: red;
+			}
+			
+			.con>div:nth-child(4):after {
+				content: "";
+				display: block;
+				visibility: hidden;
+				height: 0;
+				clear: both;
+			}
+			.con>div:nth-child(4)>input {
+				outline: none;
+				text-indent: 10px;
+				float: left;
+				width: 190px;
+				height: 50px;
+			}
+			
+			.con>div:nth-child(4)>i {
+				text-align: center;
+				line-height: 50px;
+				border: 1px solid #999;
+				float: left;
+				width: 120px;
+				height: 52px;
+			}
+			
+			.con>div:nth-child(4)>a {
+				cursor: pointer;
+				font-size: 12px;
+				float: left;
+				width: 46px;
+				margin: 18px 12px;
+			}
+			
+			.con>div:nth-child(4)>span {
+				line-height: 50px;
+			}
+			
+			.con>div:nth-child(5)>input:nth-child(1) {
+				outline: none;
+				text-indent: 10px;
+				width: 260px;
+				height: 47px;
+			}
+			
+			.con>div:nth-child(5)>input:nth-child(2) {
+				outline: none;
+				width: 109px;
+				height: 47px;
+				text-align: center;
+				margin-right: 12px;
+			}
+			
+			.con>div:nth-child(6)>input,
+			.con>div:nth-child(7)>input {
+				height: 48px;
+				width: 372px;
+				text-indent: 10px;
+				outline: none;
+				margin-right: 12px;
+			}
+			
+			.con>input:nth-child(8) {
+				height: 50px;
+				width: 372px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+				font-size: 20px;
+				background: #e8380d;
+				cursor: pointer;
+			}
+			
+			.shens {
+				text-align: center;
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+			
+			.shens>span {
+				color: #3366FF;
+				text-decoration: underline;
+			}
+			
+			.safe {
+				text-align: center;
+				font-size: 12px;
+				width: 850px;
+				margin: 0 auto 35px;
+				color: #ccc;
+			}
+			
+			.safe>a {
+				display: inline-block;
+				width: 12px;
+				height: 16px;
+				background: transparent url(img/download.png) no-repeat center;
+				background-size: cover;
+			}
+			
+			.safe>span:nth-child(2) {
+				margin-right: 12px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="con">
+			<h1></h1>
+			<p><span style="color: #e8380d;">手机号码找回密码</span><span>注册邮箱找回密码</span></p>
+			<div><input placeholder="请输入手机号码" /><span class="yincang">请输入手机号码！</span></div>
+			<div><input placeholder="请输入验证码（不区分大小写）" /><i>1234</i>
+			<a>换一张</a><span class="yincang">请输入手机号码！</span></div>
+			<div><input placeholder="请输入手机收到的验证码" /><input type="bottom" value="获取验证码" /><span class="yincang">请输入手机验证码</span></div>
+			<div><input placeholder="密码为6-16个字符(数字、字母、符号至少包含两种)" /><span class="yincang">请输入密码</span></div>
+			<div><input placeholder="请再次输入密码" /><span class="yincang">请输入确认密码</span></div>
+			<input type="text" value="提    交" />
+		</div>
+		
+		<p class="shens">以上方法都不可行，您还可以尝试<span>账号申诉</span></p>
+
+		<div class="safe">
+			<span>2012-2018 努比亚 版权所有 </span>
+			<span>粤ICP备10006213号-2  </span>
+			<span>ICP经营许可证编号：粤B2-20120688</span>
+			<a></a>
+			<span> 努比亚技术有限公司</span>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{background: #f5f5f5;}
+			p,h1,input{padding: 0;margin: 0;}
+			div{width: 378px;margin: 0 auto;padding-bottom: 19px;}
+			
+			.con>div:nth-child(2)>span,.con>div:nth-child(3)>span,.con>div:nth-child(4)>span{
+				display: inline-block; 
+				width: 1px;
+				font-size: 12px;
+				color: #FF0000;
+				white-space: nowrap;
+			}
+			.con>div:nth-child(2)>input,.con>div:nth-child(3)>input{
+				width: 360px;
+				height: 50px;
+				padding: 0;
+				margin-right: 12px;
+				outline: none;
+				text-indent: 12px;
+				font-size: 12px;
+			}	
+			.con{
+				margin-bottom: 40px;
+				margin-top: 50px;
+				width: 850px;
+				height: 533px;
+				background: #fff;
+			}	
+			.con>p:nth-child(1){
+				padding-top: 10px;
+				padding-bottom: 25px;
+				margin: 0 auto;
+				width: 156px;
+				height: 55px;
+				background: transparent url(img/nubia-logo.png) no-repeat;
+				background-position: 1px -40px;
+			}
+			.con>div:nth-child(4):after{
+				content: "";
+				clear: both;
+				display: block;
+				height: 0;
+				visibility: hidden;
+			}
+			.con>div:nth-child(4)>input{
+				text-indent: 12px;
+				margin-right: 8px;
+				float: left;
+				outline: none;
+				width: 230px;	
+				height: 50px;
+			}
+			.con>div:nth-child(4)>h1{
+				cursor: pointer;
+				margin-right: 6px;
+				float: left;
+				border: 1px solid #aaa;
+				width: 120px;
+				height: 52px;
+				line-height: 54px;
+				text-align: center;
+				font-size: 22px;
+				font-weight: normal;
+			}
+			.con>div:nth-child(4)>span{
+				line-height: 54px;
+			}
+			
+			.con>div:nth-child(5)>input{
+				margin-right: 1px;
+				text-indent: 12px;
+				height: 50px;
+				width: 258px;
+				padding: 0;
+				outline: none;
+				text-indent: 6px;
+				font-size: 12px;
+				
+			}
+			.con>div:nth-child(5)>span{
+				display: inline-block; 
+				width: 1px;
+				font-size: 12px;
+				color: #FF0000;
+				white-space: nowrap;
+			}
+			.con>div:nth-child(5){
+				padding-bottom: 19px;
+			}
+			.con>div>i{
+				cursor: pointer;
+				margin-right: 12px;
+				font-style: normal;
+				font-size: 12px;
+				border: 1px solid #999;
+				display: inline-block;
+				width: 100px;
+				height: 52px;
+				text-align: center;
+				line-height: 50px;
+			}
+			.con>div:nth-child(6){
+				padding-bottom: 15px;
+			}
+			.con>div:nth-child(6)>input{
+				cursor: pointer;
+				line-height: 21px;
+			}
+			.con>div:nth-child(6)>b{
+				font-size: 12px;
+				font-weight: 300;
+			}
+			.con>div:nth-child(6)>b>b{
+				font-size: 12px;
+				color: red;
+				
+			}
+			.con>div:nth-child(7){
+				cursor: pointer;
+				padding-bottom: 0;
+				margin-bottom: 20px;
+				line-height: 50px;
+				height: 50px;
+				font-size: 14px;
+				color: white;
+				background: #e8380d;
+				text-align: center;
+			}
+			.con>p:nth-child(8){
+				width: 378px;
+				margin: 0 auto;
+				text-align: right;
+				font-size: 14px;
+			}
+			.con>p:nth-child(8)>span{
+				cursor: pointer;
+				float: right;
+				color: red;
+			}
+			.safe{
+				text-align: center;
+				font-size: 12px;
+				width: 850px;
+				margin: 0 auto 35px;
+				color: #ccc;
+			}
+			.safe>a{
+				display: inline-block;
+				width: 12px;
+				height: 16px;
+				background: transparent url(img/download.png) no-repeat center;
+				background-size: cover;
+			}
+			.safe>span:nth-child(2){
+				margin-right: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="con">
+			<p></p>
+			<div><input type="text" autofocus placeholder="请输入手机号"/><span style="display: none;">请填写信息！</span><span style="display:none">请输入正确的手机号码</span></div>
+			<div><input type="text" placeholder="密码为6-16个字符（包括数字、字母）"/><span style="display: none;">请填写信息！</span><span style="display:none">请输入符合规范的密码</span></div>
+			<div><input type="text" placeholder="请输入验证码"/><h1></h1><span style="display: none;">验证码不能为空</span><span style="display: none;">验证码错误</span></div>
+			<div><input type="text" placeholder="请输入手机收到的验证码"/><i>获取验证码</i></div>
+			<div><input type="checkbox" name=""/><b>我已阅读并接受<b>用户协议</b>和<b>隐私协议</b></b></div>
+			<div>提交</div>
+			<p>已有账号，<span>直接登陆</span></p>
+		</div>
+		<div class="safe">
+			<span>2012-2018 努比亚 版权所有 </span>
+			<span>粤ICP备10006213号-2  </span>
+			<span>ICP经营许可证编号：粤B2-20120688</span>
+			<a></a>
+			<span> 努比亚技术有限公司</span>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+// 			var inps = document.getElementsByTagName("input");
+// 			console.log(inps);
+			// 鼠标失焦绑定事件
+			$("input").on("focusout",function(){
+				// 判断没有内容
+				if($(this).val()==""){
+					$(this).siblings("span").eq(0).css({
+						"display":"inline-block"
+					})				
+				} else if($(this).val()!=""){
+					$(this).siblings("span").css({
+						"display":"none"
+					})
+				}
+			})
+			// 判断手机号码是不是正确
+			$("input").eq(0).on("focusout",function(){
+				var val = $(this).val()
+				if(val.match(/^1[34578]\d{9}$/)==null&&$(this).val()!=""){
+					$(this).siblings("span").eq(1).css({
+						"display":"inline-block"
+					})
+				}else if(val.match(/^1[34578]\d{9}$/)!=null&&$(this).val()!=""){
+					var brr = document.cookie.split(";");
+					for(var j=0;j<brr.length;j++){
+						// 判断号码是否已注册
+						if(brr[j].split("=")[0].trim()=="tel"){
+							if(brr[j].split("=")[1]==$("input").eq(0).val()){
+								alert("手机号码已注册")
+							}else{
+								document.cookie="tel="+val
+							}
+						}
+					}
+					document.cookie="tel="+val
+				}
+			})
+			
+			// 判断密码是否正确
+			$("input").eq(1).on("focusout",function(){
+				var val = $(this).val()
+				console.log(val.match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/))
+				if(val.match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/)==null&&$(this).val()!=""){
+					$(this).siblings("span").eq(1).css({
+						"display":"inline-block",
+					})
+					alert("密码格式不规范")
+				}else if(val.match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/)!=null&&$(this).val()!=""){
+					document.cookie=$("input").eq(0).val()+"="+val
+				}
+			})
+			
+			// 判断验证码是否正确
+			$(".con h1").text(function(){
+				return parseInt((Math.random()*9000)+1001);
+			})
+			console.log($(".con h1").text())
+			
+			$("input").eq(2).on("focusout",function(){
+				if($("input").eq(2).val()!=$(".con h1").text()&&$("input").eq(2).val()!=""){
+					$(this).siblings("span").eq(1).css({
+						"display":"inline-block"
+					})
+				}else if($("input").eq(2).val()==$(".con h1").text()&&$("input").eq(2).val()!=""){
+					document.cookie="code=ture"
+				}
+			})
+			//当验证码点击时刷新验证码
+			$("h1").on("click",function(){
+				$(".con h1").text(function(){
+					return parseInt((Math.random()*9000)+1001);
+				})
+			})	
+			
+			// 当点击提交按钮时绑定事件
+			$(".con>div").eq(5).on("click",function(){
+				if($("input").eq(1).val()&&$("input").eq(0).val()&&$("input").eq(2).val()){
+					if(confirm("注册成功")){
+						location.href="login.html#="+$(".con>div").eq(0).children().val()
+					}
+				}
+			})
+			$(".con>p>span").on("click",function(){
+				location.href="login.html"
+			})
+        </script>
+		
+		
+	</body>
+</html>
